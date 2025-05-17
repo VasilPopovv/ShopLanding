@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modern Shop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+            };
+        </script>
+        <style>
+            html.dark {
+                background-color: #1f2937;
+                color: white;
+            }
+        </style>
+    </head>
+    <body class="transition-colors duration-300">
+        <!-- Header -->
+        <header class="p-6 bg-gray-100 dark:bg-gray-800 shadow-md">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-white">
+                    Modern Shop
+                </h1>
+                <div class="flex items-center gap-4">
+                    <nav class="space-x-4 text-gray-700 dark:text-gray-300">
+                        <a href="#products" class="hover:underline">Products</a>
+                        <a href="#contact" class="hover:underline">Contact</a>
+                    </nav>
+                    <button
+                        id="theme-toggle"
+                        class="p-2 rounded text-sm border border-gray-400 dark:border-gray-500"
+                    >
+                        Theme
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="text-center bg-gray-700 dark:bg-gray-950 w-full">
+            <div
+                class="p-20 bg-[url('./assets/123.jpg')] bg-cover bg-center mx-auto max-w-[1200px] w-[100%]"
+            >
+                <h2 class="text-4xl font-bold mb-4 text-white">
+                    Tech Essentials, Delivered
+                </h2>
+                <p class="text-lg text-white mb-6">
+                    Modern gadgets at your fingertips.
+                </p>
+                <a
+                    href="#products"
+                    class="px-6 py-3 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+                    >Browse Products</a
+                >
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section id="products" class="py-16 bg-gray-50 dark:bg-gray-950">
+            <div class="max-w-6xl mx-auto px-4">
+                <h3
+                    class="text-2xl font-semibold mb-8 text-gray-800 dark:text-white"
+                >
+                    Popular Products
+                </h3>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+                >
+                    <!-- Product Card -->
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="./assets/jens-kreuter-PKnn-nXCNhs-unsplash.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Smartwatch"
+                        />
+                        <div class="p-4">
+                            <h4
+                                class="text-lg font-bold text-gray-800 dark:text-white"
+                            >
+                                Smartwatch
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                $99.99
+                            </p>
+                            <button
+                                class="add-to-cart mt-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="./assets/theregisti-qt9_OfTaaeY-unsplash.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Earbuds"
+                        />
+                        <div class="p-4">
+                            <h4
+                                class="text-lg font-bold text-gray-800 dark:text-white"
+                            >
+                                Wireless Earbuds
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                $59.99
+                            </p>
+                            <button
+                                class="add-to-cart mt-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="./assets/nicolas-j-leclercq-gbG65gRAGx4-unsplash.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Speaker"
+                        />
+                        <div class="p-4">
+                            <h4
+                                class="text-lg font-bold text-gray-800 dark:text-white"
+                            >
+                                Bluetooth Speaker
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                $79.99
+                            </p>
+                            <button
+                                class="add-to-cart mt-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="./assets/sincerely-media-c7LoNDd4nKI-unsplash.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Laptop"
+                        />
+                        <div class="p-4">
+                            <h4
+                                class="text-lg font-bold text-gray-800 dark:text-white"
+                            >
+                                Slim Laptop
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                $899.00
+                            </p>
+                            <button
+                                class="add-to-cart mt-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="./assets/pedro-costa-aXY5doQNZTc-unsplash.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Keyboard"
+                        />
+                        <div class="p-4">
+                            <h4
+                                class="text-lg font-bold text-gray-800 dark:text-white"
+                            >
+                                Mechanical Keyboard
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                $129.99
+                            </p>
+                            <button
+                                class="add-to-cart mt-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden"
+                    >
+                        <img
+                            src="./assets/chris-panas-xOFXGNY72AY-unsplash.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Mouse"
+                        />
+                        <div class="p-4">
+                            <h4
+                                class="text-lg font-bold text-gray-800 dark:text-white"
+                            >
+                                Wireless Mouse
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                $49.99
+                            </p>
+                            <button
+                                class="add-to-cart mt-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-12 bg-gray-100 dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h3
+                    class="text-2xl font-semibold mb-[3rem] text-gray-800 dark:text-white"
+                >
+                    Get in Touch
+                </h3>
+            </div>
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            📍 <strong>Address:</strong> 123 Main Street, Your
+                            City
+                        </p>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            📞 <strong>Phone:</strong> +38 (044) 123-4567
+                        </p>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            📧 <strong>Email:</strong>
+                            <a
+                                href="mailto:info@example.com"
+                                class="text-indigo-600 dark:text-indigo-400 hover:underline"
+                                >info@example.com</a
+                            >
+                        </p>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22363.729579301722!2d30.494194682922384!3d50.440817646247815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sua!4v1747508091767!5m2!1sen!2sua"
+                            class="w-full h-64 rounded shadow"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="text-center text-gray-500 dark:text-gray-400 py-6 text-sm bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700"
+        >
+            © 2025 Modern Shop. All rights reserved.
+        </footer>
+
+        <!-- JS -->
+        <script src="./main.js"></script>
+    </body>
+</html>
